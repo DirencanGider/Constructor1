@@ -10,14 +10,42 @@ public class Account {
 
     private String phoneNo;
 
-    public Account() {
 
-        //System.out.println("Constructor that we made");
+    //Fourth step
 
+    public Account () {
 
+        //System.out.println("Constructor that we made"); //Fifth step
 
+        /*
+        this.accountNo = "No information";
+        this.balance = 0.0;
+        this.name = "No information";
+        this.email = "No information";
+        this.phoneNo ="No information";
+        */
+
+        this("No information", 0.0, "No information", "No information", "No information");
 
     }
+
+    public Account(String name, String email, String phoneNo){
+
+        /*
+        this.name = name;
+        this.email = email;
+        this.phoneNo = phoneNo;
+
+        this.balance = 0.0;
+        this.accountNo = "No information";
+        */
+
+        this("No information", 0.0,name , email, phoneNo);
+
+    }
+
+    //Sixth step.
+
     public Account(String accountNo, double balance, String name, String email, String phoneNo) {
 
         this.accountNo = accountNo;
@@ -28,6 +56,8 @@ public class Account {
 
     }
 
+    //Third step
+
     public void depositMoney (double amount) { //Para yatirma islemi metodu yazdik. (TR)
 
         balance += amount;
@@ -35,6 +65,8 @@ public class Account {
         System.out.println("Your New Balance: " + balance);
 
     }
+
+    //Fourth step
 
     public void withdrawalls (double amount) { //Para cekme islemi metodu yazdik. (TR)
 
@@ -50,6 +82,23 @@ public class Account {
         }
 
     }
+
+
+    //Last step in lesson.
+
+    public void showInformations () {
+
+        System.out.println("Account No: " + this.accountNo);
+        System.out.println("Balance: " + this.balance);
+        System.out.println("Name: " + this.name);
+        System.out.println("Email: " + this.email);
+        System.out.println("Phone Number: " + this.phoneNo);
+
+
+    }
+
+
+    //Second step. We use Generate feature and created all getter and setter methods automatically.
 
     public double getBalance() {
         return balance;
