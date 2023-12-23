@@ -11,11 +11,13 @@ public class Account {
     private String phoneNo;
 
 
-    //Fourth step
+    //Fifth Step
 
     public Account () {
 
-        //System.out.println("Constructor that we made"); //Fifth step
+        //System.out.println("Constructor that we made");
+
+        //Seventh Step
 
         /*
         this.accountNo = "No information";
@@ -28,6 +30,8 @@ public class Account {
         this("No information", 0.0, "No information", "No information", "No information");
 
     }
+
+    //Eighth Step - Method Overloading
 
     public Account(String name, String email, String phoneNo){
 
@@ -84,7 +88,7 @@ public class Account {
     }
 
 
-    //Last step in lesson.
+    //Last Step in lesson.
 
     public void showInformations () {
 
